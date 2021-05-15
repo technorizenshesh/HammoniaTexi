@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_200sdp"
+    android:background="@color/red"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/rlEditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_gravity="center_vertical"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_profile_image"
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/user_ic"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/ic_edit"
+            android:layout_alignEnd="@id/iv_profile_image"
+            android:layout_alignRight="@id/iv_profile_image"
+            android:layout_marginRight="-20dp"
+            android:layout_marginTop="-10dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carson"
+        android:fontFamily="@font/inter_bold"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:textSize="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="carson@mobility.com"
+        android:fontFamily="@font/inter_regular"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/white"/>
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRideHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ride history"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:textAllCaps="true"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textSize="@dimen/_14sdp"
+        />
+    <TextView
+        android:id="@+id/tvPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:textAllCaps="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textColor="@color/black"
+
+        android:fontFamily="@font/inter_semi_bold"
+        android:textSize="@dimen/_14sdp"        />
+    <TextView
+        android:id="@+id/tvPromocode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PromoCode"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:textAllCaps="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textSize="@dimen/_14sdp"        />
+    <TextView
+        android:id="@+id/tvSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Support"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:textAllCaps="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textSize="@dimen/_14sdp"        />
+
+    <TextView
+        android:id="@+id/tvLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locgout"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:textAllCaps="true"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textSize="@dimen/_14sdp"        />
+
+</LinearLayout>
+</layout>

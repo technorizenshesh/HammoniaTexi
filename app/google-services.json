@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "975115062509",
+    "project_id": "taxiapp-685cb",
+    "storage_bucket": "taxiapp-685cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975115062509:android:8c7abcbc5f8dcf57b050e4",
+        "android_client_info": {
+          "package_name": "com.taximobility"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975115062509-lm0ib4db4di41vc9fplrddj6apc4ac00.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSluk6GAFMGYTEA60emol5GY45qjhgOXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "975115062509-lm0ib4db4di41vc9fplrddj6apc4ac00.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

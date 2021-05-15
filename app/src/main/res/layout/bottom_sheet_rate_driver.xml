@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:minHeight="@dimen/_350sdp">
+    <RelativeLayout
+        android:id="@+id/rlFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_320sdp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rec_top_40"
+            android:layout_marginTop="@dimen/_33sdp"
+            android:padding="@dimen/_10sdp"
+            >
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDriver3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:id="@+id/rlDriverPropic3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_circular_bg"
+                >
+                <ImageView
+                    android:id="@+id/ivDriverPropic3"
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="@dimen/_75sdp"
+                    android:src="@drawable/male_ic"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pratik"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/inter_bold"
+                android:layout_below="@id/rlDriverPropic3"
+                />
+        </RelativeLayout>
+
+
+
+        <RatingBar
+            android:layout_below="@id/rlDriver3"
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:theme="@style/RatingBar"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/tvFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excelent"
+            android:layout_below="@+id/ratingBar"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_regular"
+            />
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:inputType="text|textMultiLine"
+            android:gravity="top"
+            android:layout_below="@id/tvFeedback"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/light_gray"
+            android:hint="Message"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_rec_10dp_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:textAllCaps="false"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:text="Rate"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

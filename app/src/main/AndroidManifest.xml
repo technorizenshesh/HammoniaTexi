@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.taximobility">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:name="com.taximobility.Application.MyApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Taximobility"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.TrackActivity"></activity>
+        <activity android:name=".activities.NumberActivity"></activity>
+        <activity android:name=".activities.MainStartActivity" />
+        <activity
+            android:name=".activities.DialogMessageActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity android:name=".activities.DriverDetailActivity" />
+        <activity android:name=".activities.RideDetailActivity" />
+        <activity android:name=".activities.RideHistoryActivity" />
+        <activity android:name=".activities.ContactUsActivity" />
+        <activity android:name=".activities.YourSupportTicketsActivity" />
+        <activity android:name=".activities.FAQS" />
+        <activity android:name=".activities.SupportActivity" />
+        <activity android:name=".activities.AddPromoCodeActivity" />
+        <activity android:name=".activities.PromoCodeActivity" />
+        <activity android:name=".activities.ProfileActivity" />
+        <activity android:name=".activities.CardAdded" />
+        <activity android:name=".activities.AddCard" />
+        <activity android:name=".activities.RideCancelationActivity" />
+        <activity android:name=".activities.SelectDriverActivity" />
+        <activity android:name=".activities.PaymentOptionActivity" />
+        <activity android:name=".activities.CancelBooking" />
+        <activity android:name=".activities.RideOptionActivity" />
+        <activity android:name=".activities.HomeActivity" />
+        <activity android:name=".activities.OTPActivity" />
+        <activity android:name=".activities.ForgotPasswordActivity" />
+        <activity android:name=".activities.SignupActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/api_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <service
+            android:name=".Services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+
+</manifest>
