@@ -16,6 +16,7 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 public class SessionManager {
+
     private final SharedPreferences prf;
     private final SharedPreferences.Editor edit;
     Context context;
@@ -33,7 +34,7 @@ public class SessionManager {
         edit.putString(SessionKey.type.name(),type);
         edit.commit();
     }
-    public String getUserType(){
+    public String getUserType() {
         return prf.getString(SessionKey.type.name(),"");
     }
 
@@ -109,7 +110,7 @@ public class SessionManager {
       edit.commit();
     }
     public String getLastSearch(){
-        return prf.getString("taxi_lng","a");
+        return prf.getString("last_key","a");
     }
     public String getLastRequestID(){
         return prf.getString("last_request","0");

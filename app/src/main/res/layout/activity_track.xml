@@ -1,29 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <data>
         <variable
             name="driver"
-            type="com.taximobility.pojos.UserDetail" />
+            type="com.hammoniatexiapp.pojos.UserDetail"/>
     </data>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="visible">
 
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:elevation="@dimen/_15sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            app:tint="@color/purple_200" />
+
         <fragment
             android:id="@+id/map"
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
+            android:layout_height="match_parent"
+            android:layout_marginBottom="-50dp"
+            android:layout_above="@+id/rlDriver"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/_15sdp"
-
-            >
+            android:padding="@dimen/_15sdp">
 
             <RelativeLayout
                 android:id="@+id/btnBack"
@@ -45,11 +56,9 @@
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/poppins_semibold"
-
                 android:textColor="@color/black"
                 android:textSize="@dimen/_14sdp" />
         </RelativeLayout>
-
 
         <RelativeLayout
             android:id="@+id/rlDriver"
@@ -84,9 +93,10 @@
                     android:layout_below="@id/tvCaraNumber"
                     android:layout_alignParentEnd="true"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="@{driver.carTypeName}"
+                    android:text="@{driver.carNumber}"
                     android:textColor="@color/textColor"
                     android:textSize="@dimen/_12sdp" />
+
                 <RelativeLayout
                     android:id="@+id/ivCancel"
                     android:layout_width="@dimen/_60sdp"
@@ -111,7 +121,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerInParent="true"
+                        android:padding="@dimen/_10sdp"
                         android:src="@drawable/ic_call" />
+
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -190,10 +202,9 @@
             android:id="@+id/rlFeedback"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_340sdp"
+            android:visibility="gone"
             android:layout_alignParentBottom="true"
-            android:orientation="vertical"
-            android:visibility="gone">
-
+            android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -214,9 +225,7 @@
                     android:id="@+id/rlDriverPropic3"
                     android:layout_width="@dimen/_80sdp"
                     android:layout_height="@dimen/_80sdp"
-                    android:background="@drawable/white_circular_bg"
-
-                    >
+                    android:background="@drawable/white_circular_bg">
 
                     <ImageView
                         android:id="@+id/ivDriverPropic3"
@@ -224,6 +233,7 @@
                         android:layout_height="@dimen/_50sdp"
                         android:layout_centerInParent="true"
                         android:src="@drawable/user_ic" />
+
                 </RelativeLayout>
 
                 <TextView
@@ -232,21 +242,19 @@
                     android:layout_below="@id/rlDriverPropic3"
                     android:layout_centerHorizontal="true"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="Pratik"
+                    android:text="@{driver.firstName}"
                     android:textColor="@color/black"
-
                     android:textSize="@dimen/_14sdp" />
             </RelativeLayout>
-
 
             <RatingBar
                 android:id="@+id/ratingBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rlDriver3"
+                android:rating="5"
                 android:layout_centerHorizontal="true"
                 app:layout_constraintStart_toStartOf="parent"
-
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView

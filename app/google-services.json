@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "975115062509",
-    "project_id": "taxiapp-685cb",
-    "storage_bucket": "taxiapp-685cb.appspot.com"
+    "project_number": "686438862139",
+    "project_id": "hammoniatexiapp",
+    "storage_bucket": "hammoniatexiapp.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:975115062509:android:8c7abcbc5f8dcf57b050e4",
+        "mobilesdk_app_id": "1:686438862139:android:02864a5d0827fd6ab97b1e",
         "android_client_info": {
-          "package_name": "com.taximobility"
+          "package_name": "com.hammoniatexiapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "975115062509-lm0ib4db4di41vc9fplrddj6apc4ac00.apps.googleusercontent.com",
+          "client_id": "686438862139-aqo0ibbf5co1nhplu8eioi1oqfeisop6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hammoniatexiapp",
+            "certificate_hash": "46b4dcc271370dd043e1cf4c6b26529a3c5cc05f"
+          }
+        },
+        {
+          "client_id": "686438862139-13ad6m0fnbdpcn0hahhh4frut4rlqk5a.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDSluk6GAFMGYTEA60emol5GY45qjhgOXs"
+          "current_key": "AIzaSyBz6oWE9Z2okvLDnd70c549yW09xQJEBME"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "975115062509-lm0ib4db4di41vc9fplrddj6apc4ac00.apps.googleusercontent.com",
+              "client_id": "686438862139-13ad6m0fnbdpcn0hahhh4frut4rlqk5a.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

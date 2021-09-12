@@ -51,6 +51,14 @@
             android:fontFamily="@font/inter_semi_bold"
             />
 
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/logo"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            app:tint="@color/purple_200" />
+
     </RelativeLayout>
 
     <com.vinaygaba.creditcardview.CreditCardView

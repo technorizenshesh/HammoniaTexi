@@ -387,4 +387,5 @@ public class Tools {
         Calendar calendar = Calendar.getInstance();
         return calendar.getTimeZone().getID();
     }
+
 }

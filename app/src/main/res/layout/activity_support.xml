@@ -12,7 +12,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/_230sdp"
-        android:background="@color/red"
+        android:background="@color/purple_200"
         />
 
     <RelativeLayout
@@ -21,6 +21,14 @@
         android:padding="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_5sdp"
         >
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/logo"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            app:tint="@color/white" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/ivBack"

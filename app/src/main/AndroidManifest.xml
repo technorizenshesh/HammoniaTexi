@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.taximobility">
+    package="com.hammoniatexiapp">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
@@ -10,50 +12,112 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
+        android:name="com.hammoniatexiapp.Application.MyApplication"
         android:allowBackup="true"
-        android:name="com.taximobility.Application.MyApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Taximobility"
+        android:theme="@style/Theme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activities.TrackActivity"></activity>
-        <activity android:name=".activities.NumberActivity"></activity>
-        <activity android:name=".activities.MainStartActivity" />
+
+        <activity android:name="com.hammoniatexiapp.activities.TaxiChatingActivity"
+            android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".activities.DialogMessageActivity"
+            android:name="com.hammoniatexiapp.activities.PinLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.PaymentSummary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.TrackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.NumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.MainStartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.DialogMessageActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.Transparent" />
-        <activity android:name=".activities.DriverDetailActivity" />
-        <activity android:name=".activities.RideDetailActivity" />
-        <activity android:name=".activities.RideHistoryActivity" />
-        <activity android:name=".activities.ContactUsActivity" />
-        <activity android:name=".activities.YourSupportTicketsActivity" />
-        <activity android:name=".activities.FAQS" />
-        <activity android:name=".activities.SupportActivity" />
-        <activity android:name=".activities.AddPromoCodeActivity" />
-        <activity android:name=".activities.PromoCodeActivity" />
-        <activity android:name=".activities.ProfileActivity" />
-        <activity android:name=".activities.CardAdded" />
-        <activity android:name=".activities.AddCard" />
-        <activity android:name=".activities.RideCancelationActivity" />
-        <activity android:name=".activities.SelectDriverActivity" />
-        <activity android:name=".activities.PaymentOptionActivity" />
-        <activity android:name=".activities.CancelBooking" />
-        <activity android:name=".activities.RideOptionActivity" />
-        <activity android:name=".activities.HomeActivity" />
-        <activity android:name=".activities.OTPActivity" />
-        <activity android:name=".activities.ForgotPasswordActivity" />
-        <activity android:name=".activities.SignupActivity" />
-        <activity android:name=".activities.LoginActivity" />
-        <activity android:name=".activities.SplashActivity">
+        <activity
+            android:name="com.hammoniatexiapp.activities.DriverDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.RideDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.RideHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.YourSupportTicketsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.FAQS"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.SupportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.AddPromoCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.PromoCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.CardAdded"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.AddCard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.RideCancelationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.SelectDriverActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.PaymentOptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.CancelBooking"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.RideOptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.OTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammoniatexiapp.activities.SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.hammoniatexiapp.MainActivity" />
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
@@ -67,14 +131,22 @@
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorAccent" />
-        <service
-            android:name=".Services.MyFirebaseMessagingService">
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <uses-library android:name="org.apache.http.legacy"
+            android:required="false"/>
+
+        <service android:name="com.hammoniatexiapp.fcm.MyFirebaseMessagingService"
+            android:exported="false">
             <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+<!--                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />-->
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-    </application>
 
+    </application>
 
 </manifest>

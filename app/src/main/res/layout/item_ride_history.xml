@@ -4,7 +4,7 @@
     <data>
         <variable
             name="data"
-            type="com.taximobility.pojos.ModelRideHistory.Result" />
+            type="com.hammoniatexiapp.pojos.ModelRideHistory.Result" />
     </data>
     <androidx.cardview.widget.CardView
             android:layout_width="match_parent"

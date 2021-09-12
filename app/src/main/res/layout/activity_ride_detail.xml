@@ -5,7 +5,7 @@
     <data>
         <variable
             name="data"
-            type="com.taximobility.pojos.ModelRideHistory.Result" />
+            type="com.hammoniatexiapp.pojos.ModelRideHistory.Result" />
     </data>
 <RelativeLayout
     android:layout_width="match_parent"
@@ -20,6 +20,14 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:padding="@dimen/_15sdp"
         >
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/logo"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            app:tint="@color/purple_200" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/ivBack"

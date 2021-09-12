@@ -9,6 +9,15 @@
     android:background="@color/bg_color"
     tools:context=".activities.RideCancelationActivity">
 
+    <ImageView
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:tint="@color/purple_200" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,6 +36,7 @@
             android:src="@drawable/left_arrow_black"
             android:layout_centerInParent="true"
             />
+
     </RelativeLayout>
     <TextView
     android:layout_width="wrap_content"

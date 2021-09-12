@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -13,14 +14,15 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"
             android:elevation="@dimen/_20sdp">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/white_bg_5"
-                >
+                android:background="@drawable/white_bg_5">
+
                 <ImageView
                     android:id="@+id/ivSearch1"
                     android:layout_width="@dimen/_20sdp"

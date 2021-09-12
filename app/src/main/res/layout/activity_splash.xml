@@ -4,15 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_color"
+    android:background="@color/purple_200"
     tools:context=".activities.SplashActivity">
 
     <ImageView
-        android:layout_width="@dimen/_200sdp"
+        android:layout_width="@dimen/_100sdp"
         android:layout_height="@dimen/_100sdp"
         android:layout_centerInParent="true"
-        android:background="@drawable/ic_logo"
-        />
-
+        android:background="@drawable/ic_logo" />
 
 </RelativeLayout>

@@ -11,37 +11,36 @@
         android:layout_height="@dimen/_320sdp"
         android:layout_alignParentBottom="true"
         android:orientation="vertical"
-        android:visibility="visible"
-        >
-
+        android:visibility="visible">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/rec_top_40"
             android:layout_marginTop="@dimen/_33sdp"
-            android:padding="@dimen/_10sdp"
-            >
+            android:padding="@dimen/_10sdp">
 
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/rlDriver3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="wrap_content">
+
             <RelativeLayout
                 android:id="@+id/rlDriverPropic3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/white_circular_bg"
-                >
+                android:background="@drawable/white_circular_bg">
+
                 <ImageView
                     android:id="@+id/ivDriverPropic3"
                     android:layout_width="@dimen/_75sdp"
                     android:layout_height="@dimen/_75sdp"
                     android:src="@drawable/male_ic"/>
+
             </RelativeLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -49,11 +48,9 @@
                 android:textColor="@color/black"
                 android:layout_centerHorizontal="true"
                 android:fontFamily="@font/inter_bold"
-                android:layout_below="@id/rlDriverPropic3"
-                />
+                android:layout_below="@id/rlDriverPropic3" />
+
         </RelativeLayout>
-
-
 
         <RatingBar
             android:layout_below="@id/rlDriver3"
@@ -63,8 +60,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:theme="@style/RatingBar"
-            android:layout_centerHorizontal="true"
-            />
+            android:rating="5"
+            android:layout_centerHorizontal="true" />
 
         <TextView
             android:id="@+id/tvFeedback"

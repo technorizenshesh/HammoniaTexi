@@ -19,7 +19,7 @@
                     android:id="@+id/layoutUserDetail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/primary"
+                    android:background="@color/purple_200"
                     >
 
                     <de.hdodenhof.circleimageview.CircleImageView
@@ -73,15 +73,38 @@
 
                 </RelativeLayout>
 
-
                 <RelativeLayout
-                    android:id="@+id/btnProfile"
+                    android:id="@+id/btnHome"
                     android:layout_below="@+id/layoutUserDetail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_35sdp"
-                    >
+                    android:layout_marginTop="@dimen/_35sdp">
+
+                    <TextView
+                        android:id="@+id/homemain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_7sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/home"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        android:textAllCaps="true"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnProfile"
+                    android:layout_below="@+id/btnHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
                     <TextView
                         android:id="@+id/profile"
                         android:layout_width="wrap_content"
@@ -98,7 +121,6 @@
 
 
                 </RelativeLayout>
-
 
                 <RelativeLayout
                     android:id="@+id/btnHistory"
@@ -130,6 +152,7 @@
                     android:layout_below="@+id/btnHistory"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:visibility="gone"
                     android:padding="@dimen/_10sdp"
 
                     >
@@ -171,15 +194,16 @@
                         android:textSize="@dimen/_15sdp"
                         android:textAllCaps="true"/>
 
-
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:id="@+id/btnPromocode"
                     android:layout_below="@+id/btnWallet"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/_10sdp"
-                    >
+                    android:visibility="gone"
+                    android:padding="@dimen/_10sdp">
+
                     <TextView
                         android:id="@+id/promocode"
                         android:layout_width="wrap_content"
@@ -200,12 +224,10 @@
                 <RelativeLayout
                     android:id="@+id/btnSupport"
                     android:layout_below="@+id/btnPromocode"
-
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp">
 
-                    >
                     <TextView
                         android:id="@+id/support"
                         android:layout_width="wrap_content"
